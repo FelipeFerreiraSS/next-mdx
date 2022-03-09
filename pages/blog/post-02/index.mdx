@@ -1,19 +1,15 @@
----
-title: Primeiro post
-tags: 
-  - front-end
-  - css
-date: 07-03-2022
-summary: Neque porro quisquam est, incididunt ut labore et dolore magna aliqua.
----
+import BlogPost from '../../../components/BlogPost'
 
-# Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+export const meta = {
+  title: 'Segundo post',
+  description: 'Getting started with the Next framework',
+  date: 'Aug 04, 2020',
+  readTime: 2
+}
 
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Et harum quidem rerum facilis est et expedita distinctio. Do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
 
-Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo. __At vero eos et accusamus.__ *At vero eos et accusamus.* Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-
-## Eaque ipsa quae ab illo inventore veritatis et quasi.
+# Eaque ipsa quae ab illo inventore veritatis et quasi.
 
 Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam. Sed ut perspiciatis unde omnis iste natus error sit voluptatem. Et harum quidem rerum facilis est et expedita distinctio.
 
@@ -21,7 +17,7 @@ Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit la
 2. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
 3. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
 
-### Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+## Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
 
 Corrupti quos dolores et quas molestias excepturi sint occaecati. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
 

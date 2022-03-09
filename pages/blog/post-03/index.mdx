@@ -1,11 +1,14 @@
----
-title: Terceiro post
-tags: 
-  - front-end
-  - html
-date: 10-03-2022
-summary: Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Et harum quidem rerum facilis est et expedita distinctio. Do eiusmod tempor incididunt ut labore et dolore magna aliqua.
----
+import BlogPost from '../../../components/BlogPost'
+
+export const meta = {
+  title: 'Terceiro post',
+  description: 'Getting started with the Next framework',
+  date: 'Aug 04, 2020',
+  readTime: 2
+}
+
+export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
+
 
 # Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
 
