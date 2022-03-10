@@ -1,4 +1,4 @@
-export default function Button({ id }) {
+export default function Button() {
   return (
     <>
       <button>
